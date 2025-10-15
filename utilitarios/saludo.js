@@ -1,7 +1,9 @@
 saludar = function (){
-    let nombre = recuperarTexto ("txtNombre")
-    let apellido = recuperarTexto ("txtApellido")
-    console.log (nombre+ "" + apellido);
+    let nombre = recuperarTexto ("txtNombre");
+    let apellido = recuperarTexto ("txtApellido");
+    let edad = recuperarInt ("txtEdad");
+    let estatura = recuperarFloat ("txtEstatura" );
+    console.log (nombre+ "  " + apellido+ "   " +edad+ "  " +estatura);
 }
 
 
@@ -12,3 +14,15 @@ recuperarTexto = function (idComponente){
      valorIngresado = componente.value;
      return valorIngresado;
     }
+
+recuperarInt = function (idComponente) {
+    let valorCaja = recuperarTexto (idComponente);
+    let valorEntero = parseInt (valorCaja);
+    return valorEntero ;
+}
+
+recuperarFloat = function (idComponente) {
+    let valorCaja = recuperarTexto (idComponente);
+    let valorFloat = parseFloat (valorCaja);
+    return valorFloat;
+}
