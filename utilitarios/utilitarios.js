@@ -1,7 +1,7 @@
 mostratTextoEnCaja = function (idComponente, mensaje){
     let cmpResultado;
     cmpResultado = document.getElementById(idComponente);
-    cmpResultado.value = mensaje
+    cmpResultado.value = mensaje;
 }
 recuperarTexto = function (idComponente){
      let componente;
@@ -23,7 +23,7 @@ recuperarFloat = function (idComponente) {
 mostrarTexto = function (idComponente, mensaje){
     let cmpResultado;
     cmpResultado = document.getElementById(idComponente);
-    cmpResultado.innerText = mensaje
+    cmpResultado.innerText = mensaje;
 }
 mostrarImagen = function (idComponente, rutaImagen){
     let componente;
