@@ -3,26 +3,10 @@ saludar = function (){
     let apellido = recuperarTexto ("txtApellido");
     let edad = recuperarInt ("txtEdad");
     let estatura = recuperarFloat ("txtEstatura" );
-    console.log (nombre+ "  " + apellido+ "   " +edad+ "  " +estatura);
+    let mensajeBienvenida = "Bienvenido:  " +nombre+ "  " +apellido;
+    mostrarTexto ("lblResultado", mensajeBienvenida);
+    mostrarImagen ("imgSaludo","./imagenes/7NcB.gif");
+    mostratTextoEnCaja ("txtNombre", "");
+    // console.log (nombre+ "  " + apellido+ "   " +edad+ "  " +estatura);
 }
 
-
-recuperarTexto = function (idComponente){
-     let componente;
-     let valorIngresado;
-     componente = document.getElementById (idComponente);
-     valorIngresado = componente.value;
-     return valorIngresado;
-    }
-
-recuperarInt = function (idComponente) {
-    let valorCaja = recuperarTexto (idComponente);
-    let valorEntero = parseInt (valorCaja);
-    return valorEntero ;
-}
-
-recuperarFloat = function (idComponente) {
-    let valorCaja = recuperarTexto (idComponente);
-    let valorFloat = parseFloat (valorCaja);
-    return valorFloat;
-}
