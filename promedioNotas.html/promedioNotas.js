@@ -10,11 +10,18 @@ calcularPromedioNotas = function () {
     let promedio = calcularPromedio(nota1, nota2, nota3);
     //muestr la pantalla el valor primedio, usar solo 2 decimelaes 
 
-    if (promedio > 0 && promedio < 7) {
+    if (promedio > 0 && promedio < 5) {
         mostrarTexto("lblResultado", "REPROBADO");
         mostrarImagen("imgSaludo", "reprobada.gif");
-    } else if (promedio > 7) {
+    } else if (promedio >= 5 && promedio <= 8) {
         mostrarTexto("lblResultado", "Buen Trabajo");
         mostrarImagen("imgSaludo", "buenTrabajo.gif");
+    }else if (promedio > 8 && promedio <= 10) {
+        mostrarTexto("lblResultado", "Exelente");
+        mostrarImagen("imgSaludo", "exelente.gif");
+    }else {
+        mostrarTexto("lblResultado", "Datos incorrectos");
+        mostrarImagen("imgSaludo", "error.gif");
     }
+    
 }
