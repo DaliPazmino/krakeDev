@@ -1,131 +1,94 @@
+esProductoValido = function (nombre) {
+    if (nombre === "") {
+        mostrarTexto("lblErrorProducto", "CAMPO OBLIGATORIO");
+        return false;
+    } else if (nombre.length > 10) {
+        mostrarTexto("lblErrorProducto", "Tienas mas de 10 caracteres");
+        return false;
+    }else 
+        mostrarTexto("lblErrorProducto", ""); // limpia el error si está bien
+        return true;
+}
+
+esCantidadValida = function (cantidad){
+       if (isNaN(cantidad)) {
+        mostrarTexto("lblErrorCantidad", "*CAMPO OBLIGATORIO");
+        return false;
+    } else if (!Number.isInteger(cantidad)) {
+        mostrarTexto("lblErrorCantidad", "Debe ser un número entero");
+        return false;
+    } else if (cantidad < 0 || cantidad > 100) {
+        mostrarTexto("lblErrorCantidad", "Rango valido: 0 a 100");
+        return false;
+    } else {
+        mostrarTexto("lblErrorCantidad", "");
+        return true;
+    }
+}
+
+
+esPrecioValido = function (precio) {
+    // precio viene de recuperarFloat; si no es número => NaN
+    if (isNaN(precio)) {
+        mostrarTexto("lblErrorPrecio", "*CAMPO OBLIGATORIO");
+        return false;
+    } else if (precio < 0 || precio > 50) {
+        mostrarTexto("lblErrorPrecio", "Rango valido: 0 a 50");
+        return false;
+    } else {
+        mostrarTexto("lblErrorPrecio", "");
+        return true;
+    }
+}
+
 calcularValorTotal = function () {
-    //variables para recuperar los valores de las cajas de texto
-    let nombreProducto;
-    let precioProducto; // SE UTILIZA PARA RECUPERAR EL PRECIO COMO FLOAT
-    let cantidad; // SE UTILIZA PARA RECUPERAR LA CANTIDAD COMO INT
-    let porcentajeDescuento;
+    let nombreProducto = recuperarTexto("txtProducto");
+    let precioProducto  = recuperarFloat("txtPrecio");
+    let cantidad        = recuperarInt("txtCantidad");
 
-    //variables para almacenar los retornos de las funciones
-    let valorSubtotal;
-    let valorDescuento;
-    let valorIVA;
-    let valorTotal;
+    // 1) Validaciones
+    const okNombre   = esProductoValido(nombreProducto);
+    const okCantidad = esCantidadValida(cantidad);
+    const okPrecio   = esPrecioValido(precioProducto);
 
-    //1. Recuperar el nombre del producto como String
-    nombreProducto = recuperarTexto("txtProducto");
-    //2. Recuperar el precio como float
-    precioProducto = recuperarFloat("txtPrecio");
-    //3. Recuperar cantidad como int
-    cantidad = recuperarInt("txtCantidad");
-    //4. Recuperar el porcentaje de descuento como int
-    porcentajeDescuento = recuperarInt("txtPorcentajeDescuento");
-    //4. Invocar a calcularSubtotal y el retorno guardar en la variable valorSubtotal
-    // Tomar en cuenta el orden de como pasa los parametos de la funcion y colocar bien
-    // los parametros cuando invoca la funcion.
-    valorSubtotal = calcularSubtotal(precioProducto, cantidad);
+    // Si algo está mal, NO seguimos calculando
+    if (!(okNombre && okCantidad && okPrecio)) {
+        // Deja montos en 0 para que no queden valores viejos
+        mostrarTexto("lblSubtotal",  "0.0");
+        mostrarTexto("lblDescuento", "0.0");
+        mostrarTexto("lblValorIVA",  "0.0");
+        mostrarTexto("lblTotal",     "0.0");
+        return;
+    }
 
-    //5. Mostrar valorSubtotal en el componente lblSubtotal
-    // Utilizar mostrarTexto
-    valorSubtotal = calcularSubtotal(precioProducto, cantidad);
-    mostrarTexto("lblSubtotal", valorSubtotal.toFixed(2));;
+    // 2) Cálculos (solo si todo es válido)
+    let valorSubtotal  = calcularSubtotal(precioProducto, cantidad);
+    mostrarTexto("lblSubtotal", valorSubtotal.toFixed(2));
 
-    /*
-    Caso de prueba: 
-        - cantidad: 10
-        - precioProducto: 5.4  
-        Subtotal esperado: 54
-    Si el caso de prueba es exitoso, hacer un commit
- */
-    //6. Invocar a calcularValorDescuento y lo que devuelve guardar en la variable valorDescuento
-    valorDescuento = calcularValorDescuento(valorSubtotal, porcentajeDescuento);
-
-    //7. Mostrar el resultado en el componente lblDescuento
+    let valorDescuento = calcularDescuentoPorVolumen(valorSubtotal, cantidad);
     mostrarTexto("lblDescuento", valorDescuento.toFixed(2));
 
-    /*
-        Caso de prueba: 
-            - cantidad: 10 
-            - precioProducto: 5.4  
-            - descuento: 10
-            - Descuento esperado: 5.4
-        Si el caso de prueba es exitoso, hacer un commit
-     */
-    //8. Invocar a calcularIVA y lo que devuelve guardar en la variable valorIVA
-    // El IVA debe calcularse sobre el valor del subtotal menos el descuento
-    let baseImponible = valorSubtotal - valorDescuento;
-    valorIVA = calcularIva(baseImponible);
-
-
-    //9. Mostrar el resultado en el componente lblValorIVA    
+    let baseImponible  = valorSubtotal - valorDescuento;
+    let valorIVA       = calcularIva(baseImponible);
     mostrarTexto("lblValorIVA", valorIVA.toFixed(2));
 
-    /*
-        Caso de prueba: 
-            - cantidad: 10 
-            - precioProducto: 5.4  
-            - descuento: 10
-
-                - valorSubtotal: 54
-                - descuento:5.4
-                - valorSubtotal 
-                - descuento: 48.6
-
-            IVA esperado: 5.832
-
-        Si el caso de prueba es exitoso, hacer un commit
-    */
-    //10. Invocar a calcularTotal y lo que devuelve guardar en la variable valorTotal
-        valorTotal = calcularTotal(valorSubtotal, valorDescuento, valorIVA);
-
-    //11. Mostrar el resultado en el componente lblTotal
-        mostrarTexto("lblTotal", valorTotal.toFixed(2));
-
-    /*
-        Caso de prueba: 
-            - cantidad: 10
-            - precioProducto: 5.4 
-            - descuento: 10
-
-                --valorSubtotal: 5.4
-                --descuento: 5.4
-                --IVA: 5.832
-
-                Total esperado: 54.432
-
-                Si el caso de prueba es exitoso, hacer un commit
-       */
-
-    //12. Mostrar un resumen en el componente lblResumen, si no existe debe agregarlo
-   mostrarTexto("lblResumen", 
-        `Valor a pagar por ${cantidad} ${nombreProducto} con ${porcentajeDescuento}% de descuento: USD ${valorTotal.toFixed(2)}`);
-    /*
-        Ejemplo: 
-            Valor a pagar por 20 cerveza corona con 10% de descuento: USD 48.75
-        Si funciona, hacer un commit
-    */
-
+    let valorTotal     = calcularTotal(valorSubtotal, valorDescuento, valorIVA);
+    mostrarTexto("lblTotal", valorTotal.toFixed(2));
 }
-limpiar = function () {
 
+
+limpiar = function () {
     mostrarTextoEnCaja("txtProducto", "");
     mostrarTextoEnCaja("txtCantidad", "0");
     mostrarTextoEnCaja("txtPrecio", "0.0");
-    mostrarTextoEnCaja("txtPorcentajeDescuento", "0");
 
-    // Limpiar resultados
-    mostrarTexto("lblSubtotal", "0.0");
+    mostrarTexto("lblSubtotal",  "0.0");
     mostrarTexto("lblDescuento", "0.0");
-    mostrarTexto("lblValorIVA", "0.0");
-    mostrarTexto("lblTotal", "0.0");
-    mostrarTexto("lblResumen", "0.0");
+    mostrarTexto("lblValorIVA",  "0.0");
+    mostrarTexto("lblTotal",     "0.0");
 
-
-
-
-    /*
-        Dejar todas las cajas de texto con el valor cadena vacía, 0 ó 0.0 según el tipo de dato
-        Dejar todos los textos de los montos con el valor 0.0
-        Si funciona, hacer un commit
-     */
+    // limpiar mensajes de error
+    mostrarTexto("lblErrorProducto", "");
+    mostrarTexto("lblErrorCantidad", "");
+    mostrarTexto("lblErrorPrecio", "");
 }
-/* SI TODO FUNCIONA, HACER UN PUSH */
