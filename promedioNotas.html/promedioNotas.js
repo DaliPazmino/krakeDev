@@ -13,11 +13,8 @@ calcularPromedioNotas = function () {
     if (promedio > 0 && promedio < 7) {
         mostrarTexto("lblResultado", "REPROBADO");
         mostrarImagen("imgSaludo", "reprobada.gif");
-    } else if (promedio > 7 ) {
+    } else if (promedio > 7) {
         mostrarTexto("lblResultado", "Buen Trabajo");
         mostrarImagen("imgSaludo", "buenTrabajo.gif");
-
-
-
-}
+    }
 }
