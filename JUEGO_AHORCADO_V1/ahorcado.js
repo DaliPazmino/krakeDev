@@ -39,4 +39,16 @@ guardarPalabra = function () {
     }
 }
 
+mostrarLetra = function (letra, posicion) {
+    // Crear el id del div donde se mostrará la letra
+    let idDiv = "div" + posicion;
+
+    // Buscar el componente en el documento HTML
+    let componente = document.getElementById(idDiv);
+
+    // Mostrar la letra dentro del div
+    componente.innerText = letra;
+};
+
+
 
