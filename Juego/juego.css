@@ -1,4 +1,4 @@
-/* ===== Estilo general ===== */
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f5f5f5;
@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
 }
 
-/* ===== Contenedor principal ===== */
+
 #contenedorPrincipal {
   background-color: #ffffff;
   border-radius: 10px;
@@ -20,14 +20,14 @@ body {
   width: 360px;
 }
 
-/* ===== Título ===== */
+
 #tituloJuego {
   color: #333;
   font-size: 20px;
   margin-bottom: 20px;
 }
 
-/* ===== Opciones del jugador ===== */
+
 #opcionesJugador {
   display: flex;
   justify-content: space-around;
@@ -41,22 +41,20 @@ body {
   transition: all 0.2s ease;
 }
 
-/* ✨ Cuando pasas el mouse sobre una imagen */
 #opcionesJugador img:hover {
   transform: scale(1.1);
-  border-color: #2563eb;     /* azul brillante */
-  background-color: #e0f2fe; /* azul claro de fondo */
+  border-color: #2563eb;     
+  background-color: #e0f2fe; 
 }
 
-/* ✋ Cuando haces clic (activo) */
+
 #opcionesJugador img:active {
   transform: scale(0.95);
-  border-color: #22c55e;     /* verde */
-  background-color: #dcfce7; /* verde claro */
+  border-color: #22c55e;     
+  background-color: #dcfce7; 
 }
 
 
-/* ===== Imagen del computador ===== */
 #tituloComputador {
   margin-top: 10px;
   color: #555;
@@ -67,7 +65,6 @@ body {
   height: 100px;
 }
 
-/* ===== Resultado ===== */
 #lblResultado {
   font-size: 18px;
   font-weight: bold;
@@ -75,14 +72,13 @@ body {
   color: #1e3a8a;
 }
 
-/* ===== Marcadores ===== */
 #marcadores p {
   margin: 5px 0;
   font-size: 16px;
   color: #333;
 }
 
-/* ===== Botón nueva partida ===== */
+
 #btnNuevaPartida {
   margin-top: 15px;
   padding: 8px 16px;
