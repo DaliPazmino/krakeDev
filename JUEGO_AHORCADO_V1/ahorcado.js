@@ -50,5 +50,36 @@ mostrarLetra = function (letra, posicion) {
     componente.innerText = letra;
 };
 
+validar = function (letra) {
+    let letrasEncontradas = 0; // contador de coincidencias
+
+    // Recorremos cada letra de la palabra secreta
+    for (let i = 0; i < palabraSecreta.length; i++) {
+        let letraActual = palabraSecreta.charAt(i);
+
+        // Si coincide con la letra que ingresó el usuario
+        if (letraActual === letra) {
+            mostrarLetra(letra, i);   // la muestra en la posición correcta
+            letrasEncontradas = letrasEncontradas + 1; // suma 1 al contador
+        }
+    }
+
+    // Solo para comprobar en consola cuántas letras se encontraron
+    console.log("Letras encontradas:", letrasEncontradas);
+};
 
 
+ingresarLetra = function () {
+    // 1️⃣ Recuperar la letra escrita por el usuario
+    let letra = document.getElementById("txtLetra").value;
+
+    // 2️⃣ Limpiar la caja de texto para que quede vacía
+    document.getElementById("txtLetra").value = "";
+
+    // 3️⃣ Verificar que la letra esté en mayúscula
+    if (esMayuscula(letra)) {
+        validar(letra); // ✅ Si es mayúscula, llamamos a validar
+    } else {
+        alert("SOLO SE ACEPTAN MAYÚSCULAS");
+    }
+};
