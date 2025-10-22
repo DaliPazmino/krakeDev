@@ -1,0 +1,99 @@
+/* ===== Estilo general ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ===== Contenedor principal ===== */
+#contenedorPrincipal {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 360px;
+}
+
+/* ===== Título ===== */
+#tituloJuego {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* ===== Opciones del jugador ===== */
+#opcionesJugador {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+#opcionesJugador img {
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+/* ✨ Cuando pasas el mouse sobre una imagen */
+#opcionesJugador img:hover {
+  transform: scale(1.1);
+  border-color: #2563eb;     /* azul brillante */
+  background-color: #e0f2fe; /* azul claro de fondo */
+}
+
+/* ✋ Cuando haces clic (activo) */
+#opcionesJugador img:active {
+  transform: scale(0.95);
+  border-color: #22c55e;     /* verde */
+  background-color: #dcfce7; /* verde claro */
+}
+
+
+/* ===== Imagen del computador ===== */
+#tituloComputador {
+  margin-top: 10px;
+  color: #555;
+}
+
+#imgComputador {
+  margin-top: 5px;
+  height: 100px;
+}
+
+/* ===== Resultado ===== */
+#lblResultado {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #1e3a8a;
+}
+
+/* ===== Marcadores ===== */
+#marcadores p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* ===== Botón nueva partida ===== */
+#btnNuevaPartida {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#btnNuevaPartida:hover {
+  background-color: #1e40af;
+}

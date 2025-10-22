@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+  <meta charset="UTF-8">
+  <title>JUEGA PIEDRA PAPEL O TIJERA</title>
 
+  <!-- Enlaces: primero el CSS, luego los JS -->
+  <link rel="stylesheet" href="juego.css">
   <script src="utilitarios.js"></script>
   <script src="serviciosJuego.js"></script>
   <script src="juego.js"></script>
 </head>
 
 <body>
-  <div>
-    <div> JUEGA PRIEDRA PAPEL O TIJERA </div>
+  <div id="contenedorPrincipal">
+    <h2 id="tituloJuego">JUEGA PIEDRA PAPEL O TIJERA</h2>
+
     <!-- El usuario elige haciendo clic en una imagen -->
-    <div>
-      <img src="./imagenes/piedra.png" alt="piedra" width="90" onclick="jugar('piedra')">
-      <img src="./imagenes/papel.png" alt="papel" width="90" onclick="jugar('papel')">
-      <img src="./imagenes/tijera.png" alt="tijera" width="90" onclick="jugar('tijera')">
+    <div id="opcionesJugador">
+      <img id="btnPiedra" src="imagenes/piedra.png" alt="piedra" width="90" onclick="jugar('piedra')">
+      <img id="btnPapel"  src="imagenes/papel.png"  alt="papel"  width="90" onclick="jugar('papel')">
+      <img id="btnTijera" src="imagenes/tijera.png" alt="tijera" width="90" onclick="jugar('tijera')">
     </div>
 
-    <h3>Computador eligió:</h3>
-    <img id="imgComputador" src="" alt="" width="110">
+    <!-- Imagen del computador -->
+    <h3 id="tituloComputador">Computador eligió:</h3>
+    <img id="imgComputador" src="" alt="Elección del computador" width="110">
 
+    <!-- Resultado -->
     <h3 id="lblResultado"></h3>
-</body>
 
+    <!-- Puntajes -->
+    <div id="marcadores">
+      <p>Puntos Usuario: <b id="lblPuntosUsuario">0</b></p>
+      <p>Puntos Computador: <b id="lblPuntosComputador">0</b></p>
+    </div>
+
+    <!-- Botón de nueva partida -->
+    <button id="btnNuevaPartida" onclick="nuevaPartida()">NUEVA PARTIDA</button>
+  </div>
+</body>
 </html>
