@@ -1,4 +1,9 @@
 //No se olvide de respirar, mantenga la calma y demuestre lo que sabe
+let palabraSecreta = "";
+let intentos = 0;        // se incrementa en ingresarLetra()
+let coincidencias = 0;   // se incrementa cuando se acierta una letra
+let errores = 0;
+
 esMayuscula = function (caracter) {
     let codigo;
     codigo = caracter.charCodeAt(0);
@@ -9,7 +14,6 @@ esMayuscula = function (caracter) {
     }
 }
 
-let palabraSecreta; // variable global
 
 guardarPalabra = function () {
     let palabra;
@@ -53,32 +57,41 @@ mostrarLetra = function (letra, posicion) {
 validar = function (letra) {
     let letrasEncontradas = 0; // contador de coincidencias
 
-    // Recorremos cada letra de la palabra secreta
     for (let i = 0; i < palabraSecreta.length; i++) {
         let letraActual = palabraSecreta.charAt(i);
 
-        // Si coincide con la letra que ingresó el usuario
         if (letraActual === letra) {
-            mostrarLetra(letra, i);   // la muestra en la posición correcta
-            letrasEncontradas = letrasEncontradas + 1; // suma 1 al contador
+            mostrarLetra(letra, i);
+            letrasEncontradas = letrasEncontradas + 1; // local
+            coincidencias = coincidencias + 1;         // 🔹 global
         }
     }
 
-    // Solo para comprobar en consola cuántas letras se encontraron
+    if (letrasEncontradas == 0) {
+        alert("LA LETRA NO ES PARTE DE LA PALABRA");
+        errores = errores + 1; // 🔹 global
+    }
+
     console.log("Letras encontradas:", letrasEncontradas);
 };
 
 
 ingresarLetra = function () {
-    // 1️⃣ Recuperar la letra escrita por el usuario
     let letra = document.getElementById("txtLetra").value;
-
-    // 2️⃣ Limpiar la caja de texto para que quede vacía
     document.getElementById("txtLetra").value = "";
 
-    // 3️⃣ Verificar que la letra esté en mayúscula
     if (esMayuscula(letra)) {
-        validar(letra); // ✅ Si es mayúscula, llamamos a validar
+        intentos = intentos + 1;  //cada vez que entra a ingresarLetra
+
+        validar(letra);           // validar letra
+
+        // Revisar condiciones del PASO 5
+        if (coincidencias == 5) {
+            alert("HA GANADO");
+        }
+        if (intentos == 10) {
+            alert("HA PERDIDO");
+        }
     } else {
         alert("SOLO SE ACEPTAN MAYÚSCULAS");
     }
