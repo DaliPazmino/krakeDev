@@ -1,7 +1,7 @@
 //No se olvide de respirar, mantenga la calma y demuestre lo que sabe
 let palabraSecreta = "";
-let intentos = 0;        // se incrementa en ingresarLetra()
-let coincidencias = 0;   // se incrementa cuando se acierta una letra
+let intentos = 0;        
+let coincidencias = 0;   
 let errores = 0;
 
 esMayuscula = function (caracter) {
@@ -18,7 +18,6 @@ esMayuscula = function (caracter) {
 guardarPalabra = function () {
     let palabra;
     let esValida = true;
-    // toma el texto de la caja
     palabra = document.getElementById("txtSecreta").value;
 
     // validar longitud
@@ -52,7 +51,7 @@ mostrarLetra = function (letra, posicion) {
 
     // Mostrar la letra dentro del div
     componente.innerText = letra;
-};
+}
 
 validar = function (letra) {
     let letrasEncontradas = 0; // contador de coincidencias
@@ -63,17 +62,17 @@ validar = function (letra) {
         if (letraActual === letra) {
             mostrarLetra(letra, i);
             letrasEncontradas = letrasEncontradas + 1; // local
-            coincidencias = coincidencias + 1;         // 🔹 global
+            coincidencias = coincidencias + 1;         // global
         }
     }
-
-    if (letrasEncontradas == 0) {
+    if (letrasEncontradas === 0) {
         alert("LA LETRA NO ES PARTE DE LA PALABRA");
-        errores = errores + 1; // 🔹 global
+        errores++;
+        mostrarAhorcado(); // muestra la siguiente imagen del ahorcado
     }
 
     console.log("Letras encontradas:", letrasEncontradas);
-};
+}
 
 
 ingresarLetra = function () {
@@ -81,18 +80,33 @@ ingresarLetra = function () {
     document.getElementById("txtLetra").value = "";
 
     if (esMayuscula(letra)) {
-        intentos = intentos + 1;  //cada vez que entra a ingresarLetra
+        intentos++;
+        validar(letra);
 
-        validar(letra);           // validar letra
-
-        // Revisar condiciones del PASO 5
-        if (coincidencias == 5) {
-            alert("HA GANADO");
+        // Verificar si ganó
+        if (coincidencias === 5) {
+            document.getElementById("ahorcadoImagen").src = "ganador.gif";
+            //alert("¡HAS GANADO!");
+            return;
         }
-        if (intentos == 10) {
-            alert("HA PERDIDO");
+
+        // Verificar si perdió
+        if (intentos === 10) {
+            document.getElementById("ahorcadoImagen").src = "gameOver.gif";
+            //alert("¡HAS PERDIDO!");
+            return;
         }
     } else {
         alert("SOLO SE ACEPTAN MAYÚSCULAS");
     }
+}
+
+
+mostrarAhorcado = function () {
+    let img = document.getElementById("ahorcadoImagen");
+    if (!img) return;
+    let numero = errores.toString().padStart(2, "0"); 
+    let nombreImagen = "Ahorcado_" + numero + ".png";
+    img.src = nombreImagen;
+    console.log("Mostrando imagen:", nombreImagen);
 };
