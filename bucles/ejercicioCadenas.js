@@ -26,12 +26,45 @@ recorrerCadena = function (cadena) {
 
 
 invertirCadena = function (cadena) {
-    let resultado = ""; 
+    let resultado = "";
 
     for (let i = cadena.length - 1; i >= 0; i--) {
         let letra = cadena.charAt(i);
-        resultado = resultado + letra; 
+        resultado = resultado + letra;
     }
 
     return resultado;
+}
+// se [uede concluir cuando ya haya barrido todo el arreglo]
+buscarLetra = function (cadena, letra) {
+    let letraIterada;
+    let existeLetra = false;
+    for (let i = 0; cadena.length; i++) {
+        letraIterada = cadena.charAt(i);
+        if (letraIterada == letra) {
+            existeLetra = true;
+        }
+
+    } if (existeLetra == true) {
+        return true;
+        //console.log("existe");
+    } else {
+        return false;
+        //console.log("no existe");
+    }
+
+}
+
+
+contarMayusculas = function (cadena) {
+    let letra
+    let contadorMayusculas =0;
+    for (let i=0; i<cadena.length; i++){
+        letra = cadena.charAt (i);
+        if (esMayuscula(letra)){
+            contadorMayusculas = contadorMayusculas +1;
+        }
+    }
+  
+    console.log (contadorMayusculas);
 }
