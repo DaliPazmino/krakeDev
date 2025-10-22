@@ -34,9 +34,9 @@ validarEstructura = function (placa) {
     }
 
     if (errores === "") {
-        return null; 
+        return null;
     } else {
-        return errores; 
+        return errores;
     }
 }
 
@@ -60,12 +60,60 @@ obtenerProvincia = function (placa) {
     else if (letra === "R") provincia = "Los Ríos";
     else if (letra === "S") provincia = "Pastaza";
     else if (letra === "T") provincia = "Tungurahua";
-    else if (letra === "U") provincia = "Sucumbíos";
+    else if (letra === "U") provincia = "Caniar";
     else if (letra === "V") provincia = "Morona Santiago";
-    else if (letra === "W") provincia = "Galápagos";
+    else if (letra === "W") provincia = "Galapagos";
     else if (letra === "X") provincia = "Cotopaxi";
     else if (letra === "Y") provincia = "Santa Elena";
     else if (letra === "Z") provincia = "Zamora Chinchipe";
+    else if (letra === "Q") provincia = "Orellana";
 
     return provincia;
+}
+
+obtenerTipoVehiculo = function (placa) {
+    let letra = placa.charAt(1); // segundo carácter
+    let tipo = null;
+
+    if (letra === "A" || letra === "Z") {
+        tipo = "Vehiculo comercial (como taxi o autobús)";
+    } 
+    else if (letra === "E") {
+        tipo = "Vehiculo gubernamental";
+    } 
+    else if (letra === "X") {
+        tipo = "Vehiculo de uso oficial";
+    } 
+    else if (letra === "S") {
+        tipo = "Vehiculo del gobierno provincial";
+    } 
+    else if (letra === "M") {
+        tipo = "Vehiculo municipal";
+    } 
+    else if (letra >= "B" && letra <= "W") {
+        // cualquier otra letra (que no sea A, Z, E, X, S, M)
+        tipo = "Vehiculo particular (privado)";
+    }
+
+    return tipo;
+}
+
+obtenerDiaPicoYPlaca = function (placa) {
+    let ultimoCaracter = placa.charAt(placa.length - 1);
+    let dia = "Libre circulación";
+
+    // validar solo si es un número del 0 al 9
+    if (ultimoCaracter === "1" || ultimoCaracter === "2") {
+        dia = "Lunes";
+    } else if (ultimoCaracter === "3" || ultimoCaracter === "4") {
+        dia = "Martes";
+    } else if (ultimoCaracter === "5" || ultimoCaracter === "6") {
+        dia = "Miércoles";
+    } else if (ultimoCaracter === "7" || ultimoCaracter === "8") {
+        dia = "Jueves";
+    } else if (ultimoCaracter === "9" || ultimoCaracter === "0") {
+        dia = "Viernes";
+    }
+
+    return dia;
 }
