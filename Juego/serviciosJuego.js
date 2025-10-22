@@ -49,7 +49,7 @@ generarRuta = function (nombre) {
 
 
 
-probarFunciones = function () {
+/*probarFunciones = function () {
     console.log("=== PRUEBA DE FUNCIONES ===");
 
     // Probar obtenerAleatorio
@@ -67,4 +67,4 @@ probarFunciones = function () {
     console.log("Ruta de piedra:", generarRuta("piedra"));
 
     console.log("=== FIN DE LAS PRUEBAS ===");
-}
+}*/
