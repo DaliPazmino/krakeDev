@@ -35,3 +35,55 @@ probarAtributos = function () {
         console.log("Ambos productos tienen el mismo stock");
     }
 }
+
+
+modificarAtributos = function (){
+    let cuenta = {
+        numero: "1342423",
+        saldo: 0.0,
+    }
+
+    cuenta.saldo = 100;
+    cuenta.saldo += 10;
+    console.logc(cuenta.saldo);
+}
+
+crearCliente = function () {
+    let cliente ={
+        cedula: "171231",
+        nombre: "juan",
+    }
+  let cliente1 = {};
+  cliente1.nombre = "Romeo";
+  cliente1.apellido = "Salcedo";
+  cliente1.cedula = "123123";
+}
+
+probarIncrementoSaldo = function (){
+    let cta = { numero: "23424",saldo:34.0}
+        incrementarSalcedo ();
+    incrementarSalcedo (cta, 100);
+    console.log(cta.saldo);
+}
+
+probarDeterminarMayor = function (){
+    let per1 = {nombre:"Daniel", edad:45};
+    let per2 = {nombre: "Luisa", edad: 48};
+    let mayor = determinarMayor(per1, per2);
+    if (mayor1!=null){
+        console.log("el mayor es" + mayor.nombre);
+    }
+}
+
+incrementarSalcedo = function (cuenta, monto) {
+    cuenta.saldo += monto;
+}
+
+detarminarMayor = function(persona1, persona2){
+    if (persona1.edad > persona2.edad){
+        return persona1;
+        
+    }else if (persona2.edad>persona1.edad){
+        return null;
+    }
+}
