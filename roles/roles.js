@@ -181,3 +181,14 @@ habilitarFormularioEmpleado = function () {
     habilitarComponente("txtSueldo");
     habilitarComponente("btnGuardar");
 }
+limpiar = function (){
+    mostrarTextoEnCaja("txtCedula", "");
+    mostrarTextoEnCaja("txtNombre", "");
+    mostrarTextoEnCaja("txtApellido", "");
+    mostrarTextoEnCaja("txtSueldo", "");
+
+    esNuevo = false;
+
+    deshabilitarFormularioEmpleado();
+}
+
