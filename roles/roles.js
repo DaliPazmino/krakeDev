@@ -84,20 +84,20 @@ guardar = function () {
     let esValido = true;
 
     if (cedula.length != 10 || isNaN(cedula)) {
-        mostrarTexto("lblErrorCedula", "La cédula debe tener exactamente 10 dígitos numéricos");
+        mostrarTexto("lblErrorCedula", "La cedula debe tener exactamente 10 digitos numericos");
         esValido = false;
     } else {
         mostrarTexto("lblErrorCedula", "");
     }
     if (nombre.length < 3 || nombre != nombre.toUpperCase()) {
-        mostrarTexto("lblErrorNombre", "El nombre debe tener al menos 3 caracteres y estar en mayúsculas");
+        mostrarTexto("lblErrorNombre", "El nombre debe tener al menos 3 caracteres y estar en mayusculas");
         esValido = false;
     } else {
         mostrarTexto("lblErrorNombre", "");
     }
 
     if (apellido.length < 3 || apellido != apellido.toUpperCase()) {
-        mostrarTexto("lblErrorApellido", "El apellido debe tener al menos 3 caracteres y estar en mayúsculas");
+        mostrarTexto("lblErrorApellido", "El apellido debe tener al menos 3 caracteres y estar en mayusculas");
         esValido = false;
     } else {
         mostrarTexto("lblErrorApellido", "");
@@ -191,4 +191,55 @@ limpiar = function (){
 
     deshabilitarFormularioEmpleado();
 }
+//parte 5
 
+buscarPorRol = function (){
+    let cedulaRol = recuperarTexto("txtBusquedaCedulaRol");
+    let empleado = buscarEmpleado(cedulaRol);
+
+    if (empleado == null) {
+        alert("EMPLEADO NO EXISTE");
+        document.getElementById("infoCedula").textContent = "";
+        document.getElementById("infoNombre").textContent = "";
+        document.getElementById("infoSueldo").textContent = "";
+    } else {
+        document.getElementById("infoCedula").textContent = empleado.cedula;
+        document.getElementById("infoNombre").textContent = empleado.nombre + " " + empleado.apellido;
+        document.getElementById("infoSueldo").textContent = empleado.sueldo;
+    }
+}
+
+// --- 9.45% del sueldo ---
+calcularAporteEmpleado = function (sueldo){
+    return sueldo * 0.0945;
+};
+
+// --- sueldo - aporte IESS - descuento ---
+calcularValorAPagar = function (sueldo, aporteIESS, descuento){
+    return sueldo - aporteIESS - descuento;
+};
+
+// --- handler del botón CALCULAR en la sección ROL ---
+calcularRol = function (){
+    // sueldo viene de un <div class="info">, se lee con textContent
+    let sueldoTexto = document.getElementById("infoSueldo").textContent;
+    let sueldo = parseFloat(sueldoTexto);
+    // descuento viene de <input>, se usa recuperarFloat que ya tienes
+    let descuento = recuperarFloat("txtDescuentos");
+
+    if (isNaN(sueldo)){
+        alert("Primero busque un empleado valido.");
+        return;
+    }
+    if (isNaN(descuento) || descuento < 0){
+        alert("Ingrese un descuento valido (numero).");
+        return;
+    }
+
+    let aporte = calcularAporteEmpleado(sueldo);
+    let pago = calcularValorAPagar(sueldo, aporte, descuento);
+
+    // mostrar resultados en los divs info
+    document.getElementById("infoIESS").textContent = aporte.toFixed(2);
+    document.getElementById("infoPago").textContent = pago.toFixed(2);
+}
