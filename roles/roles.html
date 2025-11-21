@@ -78,10 +78,10 @@
                 </div>
                 <div class="botones">
                     <div class="contenedorBoton">
-                        <input type="button" value="NUEVO" class="estiloBoton"  onclick="ejecutarNuevo()" />
+                        <input type="button" value="NUEVO" class="estiloBoton" onclick="ejecutarNuevo()" />
                     </div>
                     <div class="contenedorBoton">
-                        <input type="button" value="GUARDAR" class="estiloBoton" id="btnGuardar" onclick="guardar()"/>
+                        <input type="button" value="GUARDAR" class="estiloBoton" id="btnGuardar" onclick="guardar()" />
                     </div>
                     <div class="contenedorBoton">
                         <input type="button" value="LIMPIAR" class="estiloBoton" onclick="limpiar()" />
@@ -109,7 +109,7 @@
                     </div>
                 </div>
                 <div class="contenedorBoton">
-                    <input type="button" value="BUSCAR" class="estiloBoton" onclick="buscarPorRol();"/>
+                    <input type="button" value="BUSCAR" class="estiloBoton" onclick="buscarPorRol();" />
                 </div>
             </div>
 
@@ -170,12 +170,13 @@
                 </div>
                 <div class="botones">
                     <div class="contenedorBoton">
-                        <input type="button" value="GUARDAR" class="estiloBoton" id="btnGuardarRol" onclick="guardarRol();"/>
+                        <input type="button" value="GUARDAR" class="estiloBoton" id="btnGuardarRol"
+                            onclick="guardarRol();" />
                     </div>
                 </div>
             </div>
             <div class="logoEscuela">
-                <img id = "imgRol" src="./imagenes/logoKrakeDev.png" width="80%" />
+                <img id="imgRol" src="./imagenes/logoKrakeDev.png" width="80%" />
             </div>
         </div>
     </div>
@@ -212,6 +213,15 @@
                         <div class="info" id="infoAporteEmpleado">0.0</div>
                     </div>
                 </div>
+                <div class="ingresoDatos">
+                    <div class="tituloCampo">
+                        TOTAL NÓMINA
+                    </div>
+                    <div>
+                        <div class="info" id="infoTotalNomina">0.0</div>
+                    </div>
+                </div>
+
             </div>
             <div class="logoEscuela">
                 <img id="imgResumen" src="./imagenes/logoKrakeDev.png" width="80%" />
