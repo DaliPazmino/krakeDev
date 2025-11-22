@@ -1,0 +1,138 @@
+21-Nov-2025 02:24:35.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.1.49
+21-Nov-2025 02:24:35.673 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Nov 6 2025 01:31:11 UTC
+21-Nov-2025 02:24:35.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.1.49.0
+21-Nov-2025 02:24:35.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+21-Nov-2025 02:24:35.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+21-Nov-2025 02:24:35.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+21-Nov-2025 02:24:35.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-17
+21-Nov-2025 02:24:35.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17.0.12+8-LTS-286
+21-Nov-2025 02:24:35.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+21-Nov-2025 02:24:35.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49
+21-Nov-2025 02:24:35.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49
+21-Nov-2025 02:24:35.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\conf\logging.properties
+21-Nov-2025 02:24:35.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Nov-2025 02:24:35.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+21-Nov-2025 02:24:35.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+21-Nov-2025 02:24:35.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dsun.io.useCanonCaches=false
+21-Nov-2025 02:24:35.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+21-Nov-2025 02:24:35.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+21-Nov-2025 02:24:35.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+21-Nov-2025 02:24:35.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+21-Nov-2025 02:24:35.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+21-Nov-2025 02:24:35.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+21-Nov-2025 02:24:35.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49
+21-Nov-2025 02:24:35.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49
+21-Nov-2025 02:24:35.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\temp
+21-Nov-2025 02:24:35.707 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [2.0.9] con la versión APR [1.7.6].
+21-Nov-2025 02:24:35.737 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.5.0 8 Apr 2025]
+21-Nov-2025 02:24:35.953 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+21-Nov-2025 02:24:35.982 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [507] milliseconds
+21-Nov-2025 02:24:36.057 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+21-Nov-2025 02:24:36.058 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.49]
+21-Nov-2025 02:24:36.076 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\docs] de la aplicación web
+21-Nov-2025 02:24:36.505 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\docs] has finished in [426] ms
+21-Nov-2025 02:24:36.506 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\examples] de la aplicación web
+21-Nov-2025 02:24:37.386 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\examples] has finished in [881] ms
+21-Nov-2025 02:24:37.386 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\host-manager] de la aplicación web
+21-Nov-2025 02:24:37.447 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\host-manager] has finished in [60] ms
+21-Nov-2025 02:24:37.447 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\manager] de la aplicación web
+21-Nov-2025 02:24:37.498 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\manager] has finished in [51] ms
+21-Nov-2025 02:24:37.499 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\ROOT] de la aplicación web
+21-Nov-2025 02:24:37.536 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\ROOT] has finished in [37] ms
+21-Nov-2025 02:24:37.543 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+21-Nov-2025 02:24:37.590 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1609] milliseconds
+21-Nov-2025 15:05:41.454 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.1.49
+21-Nov-2025 15:05:41.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Nov 6 2025 01:31:11 UTC
+21-Nov-2025 15:05:41.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.1.49.0
+21-Nov-2025 15:05:41.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+21-Nov-2025 15:05:41.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+21-Nov-2025 15:05:41.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+21-Nov-2025 15:05:41.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-17
+21-Nov-2025 15:05:41.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17.0.12+8-LTS-286
+21-Nov-2025 15:05:41.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+21-Nov-2025 15:05:41.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49
+21-Nov-2025 15:05:41.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49
+21-Nov-2025 15:05:41.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\conf\logging.properties
+21-Nov-2025 15:05:41.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Nov-2025 15:05:41.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+21-Nov-2025 15:05:41.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+21-Nov-2025 15:05:41.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dsun.io.useCanonCaches=false
+21-Nov-2025 15:05:41.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+21-Nov-2025 15:05:41.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+21-Nov-2025 15:05:41.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+21-Nov-2025 15:05:41.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+21-Nov-2025 15:05:41.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+21-Nov-2025 15:05:41.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+21-Nov-2025 15:05:41.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49
+21-Nov-2025 15:05:41.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49
+21-Nov-2025 15:05:41.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\temp
+21-Nov-2025 15:05:41.478 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [2.0.9] con la versión APR [1.7.6].
+21-Nov-2025 15:05:41.484 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.5.0 8 Apr 2025]
+21-Nov-2025 15:05:41.673 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+21-Nov-2025 15:05:41.696 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [388] milliseconds
+21-Nov-2025 15:05:41.751 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+21-Nov-2025 15:05:41.751 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.49]
+21-Nov-2025 15:05:41.763 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\docs] de la aplicación web
+21-Nov-2025 15:05:42.099 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\docs] has finished in [333] ms
+21-Nov-2025 15:05:42.100 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\examples] de la aplicación web
+21-Nov-2025 15:05:42.866 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\examples] has finished in [765] ms
+21-Nov-2025 15:05:42.866 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\host-manager] de la aplicación web
+21-Nov-2025 15:05:42.931 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\host-manager] has finished in [65] ms
+21-Nov-2025 15:05:42.931 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\manager] de la aplicación web
+21-Nov-2025 15:05:42.986 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\manager] has finished in [55] ms
+21-Nov-2025 15:05:42.986 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\ROOT] de la aplicación web
+21-Nov-2025 15:05:43.024 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\ROOT] has finished in [38] ms
+21-Nov-2025 15:05:43.030 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+21-Nov-2025 15:05:43.071 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1374] milliseconds
+21-Nov-2025 15:07:03.303 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\krakedev] de la aplicación web
+21-Nov-2025 15:07:03.372 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\krakedev] has finished in [69] ms
+21-Nov-2025 21:02:16.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.1.49
+21-Nov-2025 21:02:16.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Nov 6 2025 01:31:11 UTC
+21-Nov-2025 21:02:16.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.1.49.0
+21-Nov-2025 21:02:16.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+21-Nov-2025 21:02:16.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+21-Nov-2025 21:02:16.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+21-Nov-2025 21:02:16.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-17
+21-Nov-2025 21:02:16.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17.0.12+8-LTS-286
+21-Nov-2025 21:02:16.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+21-Nov-2025 21:02:16.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49
+21-Nov-2025 21:02:16.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49
+21-Nov-2025 21:02:16.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\conf\logging.properties
+21-Nov-2025 21:02:16.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Nov-2025 21:02:16.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+21-Nov-2025 21:02:16.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+21-Nov-2025 21:02:16.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dsun.io.useCanonCaches=false
+21-Nov-2025 21:02:16.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+21-Nov-2025 21:02:16.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+21-Nov-2025 21:02:16.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+21-Nov-2025 21:02:16.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+21-Nov-2025 21:02:16.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+21-Nov-2025 21:02:16.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+21-Nov-2025 21:02:16.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49
+21-Nov-2025 21:02:16.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49
+21-Nov-2025 21:02:16.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\temp
+21-Nov-2025 21:02:16.711 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [2.0.9] con la versión APR [1.7.6].
+21-Nov-2025 21:02:16.720 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.5.0 8 Apr 2025]
+21-Nov-2025 21:02:16.928 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+21-Nov-2025 21:02:16.954 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [452] milliseconds
+21-Nov-2025 21:02:17.002 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+21-Nov-2025 21:02:17.002 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.49]
+21-Nov-2025 21:02:17.018 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\docs] de la aplicación web
+21-Nov-2025 21:02:17.525 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\docs] has finished in [504] ms
+21-Nov-2025 21:02:17.526 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\examples] de la aplicación web
+21-Nov-2025 21:02:18.561 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\examples] has finished in [1.035] ms
+21-Nov-2025 21:02:18.562 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\host-manager] de la aplicación web
+21-Nov-2025 21:02:18.642 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\host-manager] has finished in [79] ms
+21-Nov-2025 21:02:18.642 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\krakedev] de la aplicación web
+21-Nov-2025 21:02:18.694 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\krakedev] has finished in [52] ms
+21-Nov-2025 21:02:18.695 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\manager] de la aplicación web
+21-Nov-2025 21:02:18.758 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\manager] has finished in [63] ms
+21-Nov-2025 21:02:18.758 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\plantilla] de la aplicación web
+21-Nov-2025 21:02:18.795 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\plantilla] has finished in [37] ms
+21-Nov-2025 21:02:18.796 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\ROOT] de la aplicación web
+21-Nov-2025 21:02:18.846 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\emica\OneDrive\Documentos\Programacion_Dalila\apache-tomcat-10.1.49-windows-x64\apache-tomcat-10.1.49\webapps\ROOT] has finished in [51] ms
+21-Nov-2025 21:02:18.858 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+21-Nov-2025 21:02:18.915 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1959] milliseconds
